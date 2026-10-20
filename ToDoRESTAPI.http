@@ -1,0 +1,14 @@
+@ToDo = http://localhost:5207
+
+GET {{ToDoRESTAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+POST {{ToDo}}/api/todo
+Content-Type: application/json
+
+{
+  "title": "New Task 2",
+  "description": "This is another new task",
+  "isCompleted": false
+}
