@@ -12,3 +12,6 @@ Content-Type: application/json
   "description": "This is another new task",
   "isCompleted": false
 }
+
+###
+GET {{ToDo}}/api/todo
