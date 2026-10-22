@@ -8,13 +8,16 @@
     <h1>To-Do List Manager</h1>
 
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
 
     <div id="list"></div>
-    <div id="addForm"></div>
+    <form id="addForm">
+        <label for="newTitle">Title:</label>
+        <input type="text" name="newTitle" id="newTitle" />
+        <input type="submit" value="Add Task" />
+    </form>
 
-    <label for="title">Title:</label>
-    <input type="text" name="title" id="title" />
+    <!--<label for="title">Title:</label>
+    <input type="text" name="title" id="title" />-->
 
     <label for="description">Description:</label>
     <input type="text" name="description" id="description" />
@@ -33,5 +36,7 @@
         <li>Task 2</li>
         <li>Task 3</li>
     </ul>
+
+    <script src="app.js"></script>
 </body>
 </html>
