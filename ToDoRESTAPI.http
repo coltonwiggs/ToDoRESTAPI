@@ -1,17 +1,36 @@
 @ToDo = http://localhost:5207
 
-GET {{ToDoRESTAPI_HostAddress}}/weatherforecast/
-Accept: application/json
+###Get current list of all tasks
+GET {{ToDo}}/api/todo
+Content-Type: application/json
 
-###
+###Get specific task by ID (replace <taskID> with the ID of the task you want to retrieve)
+GET {{ToDo}}/api/todo/<taskID>
+Content-Type: application/json
+
+###Create a new task (replace values in <> with your desired task details)
 POST {{ToDo}}/api/todo
 Content-Type: application/json
 
 {
-  "title": "New Task 2",
-  "description": "This is another new task",
-  "isCompleted": false
+  "title": "<task title>",
+  "description": "<task description>",
+  "isCompleted": <true/false>,
+  "dueDate": "<YYYY-MM-DDTHH:MM:SSZ>"
 }
 
-###
-GET {{ToDo}}/api/todo
+###Update an existing task (replace <taskID> with the ID of the task you want to update, and values in <> with your desired task details)
+PUT {{ToDo}}/api/todo/<taskID>
+Content-Type: application/json
+
+{
+  "id": <taskID>,
+  "title": "<task title>",
+  "description": "<task description>",
+  "isCompleted": <true/false>,
+  "dueDate": "<YYYY-MM-DDTHH:MM:SSZ>"
+}
+
+###Delete a task (replace <taskID> with the ID of the task you want to delete)
+DELETE {{ToDo}}/api/todo/<taskID>
+Content-Type: application/json
