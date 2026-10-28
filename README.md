@@ -1,7 +1,7 @@
 # To-Do List REST API
 
-## This program is the backend of a To-Do List manager REST API using ASP.NET Core on .NET 10.
-## This program allows users to create, read, update, and delete tasks in a to-do list, with the data being stored in a Microsoft SQL Server database.
+### This program is the backend of a To-Do List manager REST API using ASP.NET Core on .NET 10.
+### This program allows users to create, read, update, and delete tasks in a to-do list, with the data being stored in a Microsoft SQL Server database.
 
 ## Stack:
 	- Language: C#
@@ -82,4 +82,4 @@
 ## Developer Notes:
 	As this project stands, only the basic backend functionality is implemented. A fully functional frontend for this application is currently in the works. 
 
-## Thank you for viewing my To-Do List REST API project! If you have any questions or feedback, please reach out to me at cwiggs4417@gmail.com.
+### Thank you for viewing my To-Do List REST API project! If you have any questions or feedback, please reach out to me at cwiggs4417@gmail.com.
