@@ -1,19 +1,19 @@
 # To-Do List REST API
 
-This program is the backend of a To-Do List manager REST API using ASP.NET Core on .NET 10.
-This program allows users to create, read, update, and delete tasks in a to-do list, with the data being stored in a Microsoft SQL Server database.
+## This program is the backend of a To-Do List manager REST API using ASP.NET Core on .NET 10.
+## This program allows users to create, read, update, and delete tasks in a to-do list, with the data being stored in a Microsoft SQL Server database.
 
-Stack:
+## Stack:
 	- Language: C#
 	- Framework: ASP.NET Core on .NET 10
 	- Database: Microsoft SQL Server
 
-Prerequisites:
+## Prerequisites:
 	- .NET 10 SDK
 	- Microsoft SQL Server or Microsoft SQL Server Express
 	- A .NET 10 compatible IDE (i.e. Visual Studio, Visual Studio Code)
 
-Setup:
+## Setup:
 	1.	Clone the repository to your local machine from my GitHub profile:
 		https://github.com/coltonwiggs/ToDoRESTAPI.git
 		Download as ZIP and extract the files to a folder of your choice, OR, 
@@ -52,7 +52,7 @@ Setup:
 	9.	Run the following command in the terminal to create the table in your database:
 			dotnet ef database update
 
-Running the application:
+## Running the application:
 	1.	Run the application using your IDE or by executing the following command in the terminal:
 			dotnet run
 	2.	The application will start and listen for incoming HTTP requests on the default port.
@@ -63,7 +63,7 @@ Running the application:
 			- PUT {{ToDo}}/api/todo/<taskID>: Update an existing task
 			- DELETE {{ToDo}}/api/todo/<taskID>: Delete a task
 
-ToDoItem fields (columns of database table):
+## ToDoItem fields (columns of database table):
 	- Id: Unique identifier for the task (integer)
 	- Title: Title of the task (string)
 	- Description: Description of the task (string)
@@ -71,7 +71,7 @@ ToDoItem fields (columns of database table):
 	- DueDate: Due date/time of the task (DateTime)
 	- CreatedAt: UTC timestamp of when the task was created (DateTime) (automatically set when the task is created/updated)
 
-HTTP Status Codes:
+## HTTP Status Codes:
 	- 200 OK: The request was successful, and the response body contains the requested data.
 	- 201 Created: The request was successful, and a new resource was created. The response body contains the newly created resource.
 	- 204 No Content: The request was successful, but there is no content to return in the response body.
@@ -79,7 +79,7 @@ HTTP Status Codes:
 	- 404 Not Found: The requested resource could not be found. The response body may contain additional information about the error.
 	- 500 Internal Server Error: An unexpected error occurred on the server. The response body may contain additional information about the error.
 
-Developer Notes:
+## Developer Notes:
 	As this project stands, only the basic backend functionality is implemented. A fully functional frontend for this application is currently in the works. 
 
-Thank you for viewing my To-Do List REST API project! If you have any questions or feedback, please reach out to me at cwiggs4417@gmail.com.
+## Thank you for viewing my To-Do List REST API project! If you have any questions or feedback, please reach out to me at cwiggs4417@gmail.com.
