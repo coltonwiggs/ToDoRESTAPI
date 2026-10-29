@@ -56,12 +56,14 @@
 	1.	Run the application using your IDE or by executing the following command in the terminal:
 			dotnet run
 	2.	The application will start and listen for incoming HTTP requests on the default port.
-	3.	To send requests to the API, use the ToDoRestAPI.http file included in the project. This file contains pre-configured HTTP requests for testing the API endpoints.
-			- GET {{ToDo}}/api/todo: Retrieve all tasks
-			- GET {{ToDo}}/api/todo/<taskID>: Retrieve a specific task by ID
-			- POST {{ToDo}}/api/todo: Create a new task
-			- PUT {{ToDo}}/api/todo/<taskID>: Update an existing task
-			- DELETE {{ToDo}}/api/todo/<taskID>: Delete a task
+	3.	To test the API endpoints, you can use a tool like Scalar or any other HTTP client of your choice. You can also use the ToDoRestAPI.http file included in the project to send pre-configured HTTP requests to the API.
+			- To use Scalar to get a better view of this API's features, run the application and navigate to localhost:5207/scalar in your web browser. This will open the Scalar UI, which provides an interactive interface for testing the API endpoints and viewing the available operations.
+			- To send requests to the API using the ToDoRestAPI.http file, simply open it in your IDE and use the "Send Request" option for each pre-configured request, replacing placeholders with desired values.
+				- GET {{ToDo}}/api/todo: Retrieve all tasks
+				- GET {{ToDo}}/api/todo/<taskID>: Retrieve a specific task by ID
+				- POST {{ToDo}}/api/todo: Create a new task
+				- PUT {{ToDo}}/api/todo/<taskID>: Update an existing task
+				- DELETE {{ToDo}}/api/todo/<taskID>: Delete a task
 
 ## ToDoItem fields (columns of database table):
 	- Id: Unique identifier for the task (integer)

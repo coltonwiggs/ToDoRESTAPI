@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata.Ecma335;
 using ToDoRESTAPI.Data;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +20,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.MapScalarApiReference();
 }
 
 app.UseHttpsRedirection();
